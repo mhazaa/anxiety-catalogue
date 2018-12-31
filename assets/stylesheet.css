@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Chakra+Petch:300,300i,400,400i,500,500i,600,600i,700,700i');
+
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: black;
+  overflow: hidden;
+  cursor: pointer;
+}
+#happyThoughts,#anxiousThoughts,#startMenu  {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+#anxiousThoughts {
+  z-index: 1;
+}
+#happyThoughts {
+  opacity: 0;
+  z-index: 2 !important;
+}
+p {
+  position: absolute;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 13px;
+  text-transform: lowercase;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+}
+#anxiousThoughts p {
+  opacity: 0;
+  color: white;
+}
+#happyThoughts p {
+  opacity: 0;
+  color: black;
+}
+#anxiousThoughts p, #happyThoughts p {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#startMenu {
+  display: block;
+  z-index: 6;
+  background: black;
+}
+#startMenu p {
+  opacity: 0.5;
+  color: white;
+}
